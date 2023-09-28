@@ -86,13 +86,13 @@ addLayer("w", {
         cols: 5,
         11: {
             title: "Neutron Star",
-            description: "White effect makes 50% stronger.",
+            description: "White effect is 50% stronger.",
             cost: new Decimal(3),
             unlocked() { return player[this.layer].unlocked },
         },
         12: {
             title: "Leucanthemum",
-            description: "White effect makes 50% more stronger.",
+            description: "White effect is 50% stronger, again...",
             cost: new Decimal(9),
             unlocked() { return hasUpgrade(this.layer, 11) },
         },
@@ -109,7 +109,7 @@ addLayer("w", {
         },
         14: {
             title: "Paper",
-            description: "Double white points gain.",
+            description: "Double white photon gain.",
             cost: new Decimal(32),
             unlocked() { return hasUpgrade(this.layer, 13) },
         },
@@ -121,7 +121,7 @@ addLayer("w", {
         },
         21: {
             title: "Calcium",
-            description: "White effect makes 100% more stronger, and <b>Diorite</b> effect makes 15% stronger.",
+            description: "White effect is 100% stronger, and <b>Diorite</b> effect is 15% stronger.",
             cost: new Decimal(256),
             unlocked() { return hasUpgrade(this.layer, 15) },
         },
