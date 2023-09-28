@@ -183,7 +183,7 @@ addLayer("w", {
     layerShown(){return true}
 })
 
-/*
+
 addLayer("r", {
     name: "red", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "R", // This appears on the layer's node. Default is the id with the first letter capitalized
@@ -195,7 +195,7 @@ addLayer("r", {
     }},
     color: "#FF0000",
     requires: new Decimal(100000), // Can be a function that takes requirement increases into account
-    resource: "red points", // Name of prestige currency
+    resource: "Red photons", // Name of prestige currency
     baseResource: "particles", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
@@ -224,7 +224,7 @@ addLayer("r", {
 
     },
     hotkeys: [
-        {key: "r", description: "R: Reset for red points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
+        {key: "r", description: "R: Reset for red photons", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return player.w.unlocked}
 })
