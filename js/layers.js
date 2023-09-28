@@ -187,7 +187,7 @@ addLayer("w", {
 addLayer("r", {
     name: "red", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "R", // This appears on the layer's node. Default is the id with the first letter capitalized
-    position: 3, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
+    position: 1, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
     branches: ['w'],
     startData() { return {
         unlocked: true,
@@ -279,7 +279,7 @@ addLayer("g", {
 addLayer("b", {
     name: "blue", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "B", // This appears on the layer's node. Default is the id with the first letter capitalized
-    position: 1, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
+    position: 3, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
     branches: ['w'],
     startData() { return {
         unlocked: true,
