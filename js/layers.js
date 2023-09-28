@@ -187,7 +187,7 @@ addLayer("w", {
 addLayer("r", {
     name: "red", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "R", // This appears on the layer's node. Default is the id with the first letter capitalized
-    position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
+    position: 1, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
     branches: ['w'],
     startData() { return {
         unlocked: true,
@@ -233,7 +233,7 @@ addLayer("r", {
 addLayer("g", {
     name: "green", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "G", // This appears on the layer's node. Default is the id with the first letter capitalized
-    position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
+    position: 2, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
     branches: ['w'],
     startData() { return {
         unlocked: true,
@@ -241,7 +241,7 @@ addLayer("g", {
     }},
     color: "#66ff00",
     requires: new Decimal(100000), // Can be a function that takes requirement increases into account
-    resource: "Red photons", // Name of prestige currency
+    resource: "Green photons", // Name of prestige currency
     baseResource: "particles", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
@@ -279,7 +279,7 @@ addLayer("g", {
 addLayer("b", {
     name: "blue", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "B", // This appears on the layer's node. Default is the id with the first letter capitalized
-    position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
+    position: 3, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
     branches: ['w'],
     startData() { return {
         unlocked: true,
@@ -287,7 +287,7 @@ addLayer("b", {
     }},
     color: "#0096FF",
     requires: new Decimal(100000), // Can be a function that takes requirement increases into account
-    resource: "Red photons", // Name of prestige currency
+    resource: "Blue photons", // Name of prestige currency
     baseResource: "particles", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
