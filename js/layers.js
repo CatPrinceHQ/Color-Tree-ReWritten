@@ -56,7 +56,7 @@ addLayer("w", {
     }},
     color: "#FFFFFF",
     requires: new Decimal(1), // Can be a function that takes requirement increases into account
-    resource: "white points", // Name of prestige currency
+    resource: "White photons", // Name of prestige currency
     baseResource: "particles", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
@@ -178,7 +178,7 @@ addLayer("w", {
         },
     },
     hotkeys: [
-        {key: "w", description: "W: Reset for white points", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
+        {key: "w", description: "W: Reset for White photons", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true}
 })
