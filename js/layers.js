@@ -55,7 +55,7 @@ addLayer("w", {
 		points: new Decimal(0),
     }},
     color: "#FFFFFF",
-    requires: new Decimal(1), // Can be a function that takes requirement increases into account
+    requires: new Decimal(0.75), // Can be a function that takes requirement increases into account
     resource: "White photons", // Name of prestige currency
     baseResource: "particles", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
